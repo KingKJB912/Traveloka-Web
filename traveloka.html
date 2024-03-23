@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Website</title>
+  <style>
+    /* Define your styles here if not using an external stylesheet */
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h1>Welcome to our Travel Website</h1>
+      <p>Explore the world with us!</p>
+      <a href="#destinations" class="btn">Discover More</a>
+    </section>
+
+    <section id="destinations">
+      <h2>Popular Destinations</h2>
+      <div class="destination-gallery">
+        <div class="gallery-item">
+          <img src="destination1.jpg" alt="Destination 1">
+          <p>Description: Beautiful beach with crystal clear water.</p>
+          <form action="view_reviews.php" method="post">
+            <input type="hidden" name="destination" value="destination1">
+            <input type="submit" value="View Reviews & Ratings">
+          </form>
+        </div>
+        <div class="gallery-item">
+          <img src="destination2.jpg" alt="Destination 2">
+          <p>Description: Majestic mountain with breathtaking views.</p>
+          <form action="view_reviews.php" method="post">
+            <input type="hidden" name="destination" value="destination2">
+            <input type="submit" value="View Reviews & Ratings">
+          </form>
+        </div>
+        <!-- Add more gallery items here -->
+      </div>
+    </section>
+
+    <section id="packages">
+      <h2>Travel Packages</h2>
+      <!-- Package cards here -->
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <!-- Contact form here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Travel Website.</p>
+  </footer>
+
+  <!-- <script src="script.js"></script> -->
+</body>
+</html>
